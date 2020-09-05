@@ -1,11 +1,11 @@
 <h1 align="center"> Hotel Management</h1>
-<h5 align="left"> Contributors are: [Kaushiki Juyal](https://github.com/Kaushiki09) and [Subhayu Roy](https://github.com/subhayuroy)</h5>
+<h5 align="left"> Contributors are: [Kaushiki](https://github.com/Kaushiki09) and [Subhayu](https://github.com/subhayuroy)</h5>
 This Project on Hotel Management is a general software developed (using Python) to simplify hotel operations by automating them. 
 In this project, “AnCasa” is the project’s hotel name. 
 It covers major aspects of hotel management; it could perform the following operations- Hotel Booking, Provide you with Hotel Rooms Info, Room Service, Billing and Record-Keeping.
 
 
-#How to run this project?
+<h2 align="center">How to run this project?</h2>
 
 1)Clone the Repo by going to your local Git Client and pushing in the command:
 `git@github.com:subhayuroy/Hotel_Management.git`
@@ -20,9 +20,9 @@ You have the program running now.
 
 #This is a sample running program:
 
-`WELCOME TO HOTEL ANCASA
+`WELCOME TO HOTEL ANCASA`
 
-1 Booking
+`1 Booking
 
 
 
@@ -48,11 +48,11 @@ Check-In: 12/03/2020
 Check-Out: 15/03/2020
 —-SELECT ROOM TYPE—-
 1. Standard Non-AC
-2. Standard AC
-3. 3-Bed Non-AC
+`2. Standard AC`
+`3. 3-Bed Non-AC
 4. 3-Bed AC
-Press 0 for Room Prices
-->3
+`Press 0 for Room Prices`
+`->3
 Room Type- 3-Bed Non-AC
 Price- 4500
 
@@ -146,5 +146,6 @@ WELCOME TO HOTEL ANCASA
 ———————————————————————————————————————-
 | Joe Root | 5555522222 | 123, xyz street, city | 12/03/2020 | 15/03/2020 | 3-Bed Non-AC | 4500
 ———————————————————————————————————————-
+
 0-BACK
 -> `
