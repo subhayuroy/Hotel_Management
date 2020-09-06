@@ -1,5 +1,7 @@
 import random
 import datetime
+import re
+
 # Global List Declaration  
 name = [] 
 phno = [] 
@@ -18,14 +20,14 @@ day = []
 i = 0
    
 # Home Function 
-def Home(): 
-      
+def Home():   
     print("\t\t\t\t\t\t WELCOME TO HOTEL ANCASA\n") 
     print("\t\t\t 1 Booking\n") 
     print("\t\t\t 2 Rooms Info\n") 
     print("\t\t\t 3 Room Service(Menu Card)\n") 
     print("\t\t\t 4 Payment\n") 
     print("\t\t\t 5 Record\n") 
+    print("\t\t\t 6 Cancel\n")
     print("\t\t\t 0 Exit\n") 
    
     ch=int(input("->")) 
@@ -39,7 +41,7 @@ def Home():
         Rooms_Info() 
       
     elif ch == 3: 
-        print(" ") 
+      print(" ") 
         restaurant() 
       
     elif ch == 4: 
@@ -50,17 +52,17 @@ def Home():
         print(" ") 
         Record() 
       
+    elif ch ==6:
+	print(" ")
+	Cancel()
     else: 
         exit() 
   
-# Function used in booking 
-   
+
+# Function used in booking   
 def date(c): 
-      
     if c[2] >= 2019 and c[2] <= 2020: 
-          
-        if c[1] != 0 and c[1] <= 12: 
-              
+        if c[1] != 0 and c[1] <= 12:  
             if c[1] == 2 and c[0] != 0 and c[0] <= 31: 
                   
                 if c[2]%4 == 0 and c[0] <= 29: 
@@ -263,7 +265,7 @@ def Booking():
                         checkout.pop(i) 
                         Booking() 
         print("") 
-        print("\t\t\t***ROOM BOOKED SUCCESSFULLY***\n") 
+        print("\t\t\t**ROOM BOOKED SUCCESSFULLY**\n") 
         print("Room No. - ",rn) 
         print("Customer Id - ",cid) 
         roomno.append(rn) 
@@ -500,7 +502,7 @@ def Record():
       
     # checks if any record exists or not 
     if phno!=[]: 
-        print("        *** HOTEL RECORD ***\n") 
+        print("        * HOTEL RECORD *\n") 
         print("| Name        | Phone No.    | Address       | Check-In  | Check-Out     | Room Type     | Price      |") 
         print("----------------------------------------------------------------------------------------------------------------------") 
           
@@ -517,7 +519,26 @@ def Record():
           
     else: 
         exit() 
-      # Driver Code  
-Home()  
-            
-                 
+
+def Cancel():
+    print("You chose to cancel your booking\n")
+    print("Enter your credentials to be cancelled:")
+    NAME = input()
+    PHONE = int(input())
+    ADD = input()
+    CHECKIN = input()
+    CHECKOUT = input()
+    name.pop(NAME)
+    phno.pop(PHONE)
+    add.pop(ADD)
+    checkin.pop(CHECKIN)
+    checkout.pop(CHECKOUT)
+    choice = input("Do you want to book again?")
+    regex = re.compile(r'y(es)?$', flags=re.IGNORECASE)
+    if regex.match(choice):
+	Home()
+    else:
+        exit()
+
+# Driver Code  
+Home() 
