@@ -1,5 +1,5 @@
 <h1 align="center"> Hotel Management</h1>
-Contributors are [Kaushiki Juyal](https://github.com/Kaushiki09) and [Subhayu Roy](https://github.com/subhayuroy)
+Contributors are @Kaushiki09 and @subhayuroy
 
 This Project on Hotel Management is a general software developed (using Python) to simplify hotel operations by automating them. 
 In this project, “AnCasa” is the project’s hotel name. 
