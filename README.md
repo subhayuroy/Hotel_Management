@@ -1,4 +1,7 @@
 <h1 align="center"> Hotel Management</h1>
+<p align="right"><img alt="GitHub" src="https://img.shields.io/github/license/subhayuroy/Hotel_Management?style=plastic"></p>
+
+
 Contributors are @Kaushiki09 and @subhayuroy
 
 This Project on Hotel Management is a general software developed (using Python) to simplify hotel operations by automating them. 
